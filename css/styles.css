@@ -1,0 +1,53 @@
+:root {
+    --main: #2D2D2A;
+    --sec: #4C4C47;
+    --acc1: #fc9f5b;
+    --acc2: #5158bb;
+}
+
+body{
+    /* background-color: var(--sec); */
+    min-height: 100vh;
+}
+
+.naglowek{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main);
+}
+.naglowek h1, i{
+    font-family: sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+.naglowek i{
+    margin-right: 0.8rem;
+    font-size: 2rem;
+    color: var(--acc2);
+    margin-left: 1rem;
+}
+.navbar{
+    padding-bottom: 0.4rem;
+    padding-top:0.4rem;
+}
+.navbar-item{
+    font-size: 1.25rem;
+}
+.title{
+    color: var(--acc1);
+}
+
+.separator{
+    background-color: var(--acc2);
+    width: 100%;
+    min-height: 0.20rem;
+}
+
+.baner{
+    height: auto;
+    width: 100%;
+}
+.baner img{}
