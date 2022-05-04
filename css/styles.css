@@ -1,6 +1,6 @@
 :root {
     --main: #2D2D2A;
-    --sec: #4C4C47;
+    --sec: #121211;
     --acc1: #fc9f5b;
     --acc2: #5158bb;
 }
@@ -10,6 +10,7 @@ body{
     min-height: 100vh;
 }
 
+/* ! Nagłówek + baner */
 .naglowek{
     display: flex;
     justify-content: center;
@@ -20,18 +21,24 @@ body{
     font-family: sans-serif;
     color: white;
     font-weight: 700;
-    font-size: 2rem;
-
+    font-size: 3rem;
+    margin-top: 1vw;
+    margin-bottom: 0.2vw;
 }
 .naglowek i{
-    margin-right: 0.8rem;
-    font-size: 2rem;
+    margin-right: 1rem;
+    font-size: 2.8rem;
     color: var(--acc2);
-    margin-left: 1rem;
 }
 .navbar{
-    padding-bottom: 0.4rem;
-    padding-top:0.4rem;
+    padding-bottom: 0.8rem;
+}
+.navbar-menu{
+    justify-content: center;
+    align-items: center;
+}
+.navbar-start{
+    margin: 0;
 }
 .navbar-item{
     font-size: 1.25rem;
@@ -40,14 +47,105 @@ body{
     color: var(--acc1);
 }
 
+.baner img{
+    height: auto;
+    width: 100%;
+}
+
+/* ! ---- */
+
+/* ! Separatory */
 .separator{
     background-color: var(--acc2);
     width: 100%;
     min-height: 0.20rem;
 }
-
-.baner{
-    height: auto;
+.separator2{
+    background-color: var(--acc1);
     width: 100%;
+    min-height: 0.20rem;
+    margin-top: -6.3px;
 }
-.baner img{}
+/* ! ---- */
+
+
+/* ! Sekcja about */
+
+.nag-sekcji-about{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main);
+    flex-direction: column;
+    align-items: center;
+}
+.nag-sekcji-about h3{
+    color: var(--acc1);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.nag-sekcji-about span{
+    color: white;
+    font-size: 1.5rem;
+}
+.about{
+    background-color: var(--main);
+
+}
+.wrapper{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.wrapper img{
+    margin-top: 1rem;
+    box-shadow: 8px 8px 20px -7px #322F2F;
+    border-radius: 50%;
+    height: 28rem;
+    margin-bottom: 2.6rem;
+}
+.about-tekst{
+    color:white;
+    align-self: flex-start;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+/* ! ---- */
+
+
+/* ! Sekcja realizacje */
+.realizacje{
+    background-color: var(--sec);
+    padding-bottom: 2.6rem;
+}
+.nag-sekcji-realizacje{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--sec);
+    flex-direction: column;
+    align-items: center;
+}
+.nag-sekcji-realizacje h3{
+    color: var(--acc2);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.nag-sekcji-realizacje span{
+    color: white;
+    font-size: 1.5rem;
+}
+.container{
+    margin-top: 2rem;
+}
+.card-tytul{
+    color: var(--acc2);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* ! ---- */
+
+/* ! Usłgui */
