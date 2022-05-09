@@ -42,13 +42,22 @@ body{
 }
 .navbar-item{
     font-size: 1.25rem;
+    color: white;
+}
+.navbar-item:hover{
+    color: var(--acc2);
 }
 .title{
     color: var(--acc1);
 }
 .ikona{
-    font-size:2rem;
+    font-size:1.6rem;
     margin-left: 0.7rem;
+    color:white;
+    align-self: center;
+}
+.ikona:hover{
+    color: var(--acc2);
 }
 
 .baner img{

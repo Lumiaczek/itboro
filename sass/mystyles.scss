@@ -6,11 +6,18 @@
 // Set your brand colors
 $main: #2D2D2A;
 $sec1: #5158bb;
+$white: #fff;
 
 // Update Bulma's global variables
+$card-background-color: $white;
 $family-sans-serif: "Roboto", sans-serif;
 $primary: $main;
 $link: $sec1;
+$scheme-main: $main;
+$scheme-main-bis: $main;
+$navbar-item-hover-background-color: $main;
+$navbar-item-hover-color: $link;
+$navbar-dropdown-background-color: $main;
 
 // Update some of Bulma's component variables
 
