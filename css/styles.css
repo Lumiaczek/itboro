@@ -17,7 +17,7 @@ body{
     align-items: center;
     background-color: var(--main);
 }
-.naglowek h1, i{
+.naglowek h1, .brand{
     font-family: sans-serif;
     color: white;
     font-weight: 700;
@@ -45,6 +45,10 @@ body{
 }
 .title{
     color: var(--acc1);
+}
+.ikona{
+    font-size:2rem;
+    margin-left: 0.7rem;
 }
 
 .baner img{
