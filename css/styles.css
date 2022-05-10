@@ -127,11 +127,23 @@ body{
 .about-tekst{
     color:white;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    font-weight: 400;
     font-size: 1.5rem;
     margin-top: 1rem;
 }
+.about-tekst strong{
+    color: var(--acc1);
+}
+.about-tekst .strong2{
+    color: var(--acc2);
+}
+.about-tekst li {
+    list-style: circle;
+    margin-left: 2rem;
+}
+
 /* ! ---- */
 
 
