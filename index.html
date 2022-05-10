@@ -79,25 +79,20 @@
 
   <!-- ! O mnie -->
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="nag-sekcji-about">
       <h3>O mnie</h3>
     </div>
     <div class="wrapper">
       <img src="img/fota-modified.png" alt="Zdjęcie mnie">
       <span class="about-tekst">
+        Mam na imię Daniel.<br>
+        Jestem uczniem Zespołu Szkół Elektrycznych,
+        na profilu Technik Informatyk.<br>
         Lorem, ipsum dolor sit amet .<br>
         Lorem, ipsum dolor sit amet .<br>
         Lorem, ipsum dolor sit amet .<br>
-        Lorem, ipsum dolor sit amet .<br>
-        Lorem, ipsum dolor sit amet .<br>
-        Lorem, ipsum dolor sit amet .<br>
-        Lorem, ipsum dolor sit amet .<br>
-        Lorem, ipsum dolor sit amet .<br>
-        Lorem, ipsum dolor sit amet .<br>
-        Lorem, ipsum dolor sit amet .<br>
-        Lorem, ipsum dolor sit amet .<br>
-        Lorem, ipsum dolor sit amet .<br>
+
       </span>
     </div>
   </section>
@@ -107,7 +102,7 @@
 
   <!-- ! Realizacje -->
 
-  <section class="realizacje">
+  <section id="realizacje" class="realizacje">
     <div class="nag-sekcji-realizacje">
       <h3>Realizacje</h3>
       <span>Tutaj znajdziesz moje ostatnie wykonane zlecenia (oraz projekty)</span>
@@ -177,18 +172,96 @@
 
   <div class="separator2"></div>
 
-  <section>
+  <section id="uslugi">
 
   </section>
 
   <!-- ! ---- -->
 
+  <!-- ! Stopka / kontakt -->
+
+  <footer class="stopka" id="kontakt">
+    <div class="wrapperikon">
+      <a href="https://www.facebook.com/daniel.borowski.1848816/" class="ikona">
+        <i class="fa-brands fa-facebook-square"></i>
+      </a>
+      <a href="https://github.com/Lumiaczek" class="ikona">
+        <i class="fa-brands fa-github-square"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/daniel-borowski-622466215/" class="ikona">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+    <a class="js-modal-trigger" data-target="kontaktmodal">Skontaktuj się ze mną!</a>
+    <span>[ Copyright © | Daniel Borowski 2022 ] </span>
+
+    <div id="kontaktmodal" class="modal">
+      <div class="modal-background"></div>
+    
+      <div class="modal-content">
+        <div class="box">
+          <p>Modal JS example</p>
+          <!-- Your content -->
+        </div>
+      </div>
+    
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+  </footer>
+
+  <!-- ! ---- -->
+
+
   <!-- ! Skrypty -->
 
   <script src="https://kit.fontawesome.com/0adb7c2a19.js" crossorigin="anonymous"></script>
-  <script>
+  <script>    
 
-    
+document.addEventListener('DOMContentLoaded', () => {
+  // Functions to open and close a modal
+  function openModal($el) {
+    $el.classList.add('is-active');
+  }
+
+  function closeModal($el) {
+    $el.classList.remove('is-active');
+  }
+
+  function closeAllModals() {
+    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+      closeModal($modal);
+    });
+  }
+
+  // Add a click event on buttons to open a specific modal
+  (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+    const modal = $trigger.dataset.target;
+    const $target = document.getElementById(modal);
+
+    $trigger.addEventListener('click', () => {
+      openModal($target);
+    });
+  });
+
+  // Add a click event on various child elements to close the parent modal
+  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+    const $target = $close.closest('.modal');
+
+    $close.addEventListener('click', () => {
+      closeModal($target);
+    });
+  });
+
+  // Add a keyboard event to close all modals
+  document.addEventListener('keydown', (event) => {
+    const e = event || window.event;
+
+    if (e.keyCode === 27) { // Escape key
+      closeAllModals();
+    }
+  });
+});
 
   document.addEventListener('DOMContentLoaded', () => {
 
