@@ -7,12 +7,14 @@
 $main: #2D2D2A;
 $sec1: #5158bb;
 $white: #fff;
+$sec2: #fc9f5b;
 
 // Update Bulma's global variables
 $card-background-color: $white;
 $family-sans-serif: "Roboto", sans-serif;
 $primary: $main;
 $link: $sec1;
+$danger: $sec2;
 $scheme-main: $main;
 $scheme-main-bis: $main;
 $navbar-item-hover-background-color: $main;
