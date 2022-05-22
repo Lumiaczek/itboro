@@ -70,6 +70,13 @@ body{
     height: auto;
     width: 100%;
 }
+.baner2{
+    height: 0;
+    width: 0;
+    opacity: 0;
+    display: none;
+    z-index: -99;  
+}
 
 /* ! ---- */
 
@@ -117,13 +124,7 @@ body{
     justify-content: center;
     gap:2rem;
     flex-wrap: wrap;
-}
-.wrapper img{
-    margin-top: 1rem;
-    box-shadow: 8px 8px 20px -7px #322F2F;
-    border-radius: 50%;
-    height: 28rem;
-    margin-bottom: 2.6rem;
+    margin-bottom: 1.5rem;
 }
 .about-tekst{
     color:white;
@@ -311,3 +312,34 @@ body{
     font-size: 2rem;
 }
 /* ! ---- */
+@media only screen and (max-width: 540px){
+    .baner img{
+        height: 0;
+        width: 0;
+        opacity: 0;
+        display: none;
+        z-index: -99;
+    }
+    .baner2{
+        height: auto;
+        width: 100%;
+        opacity: 1;
+        display: inline;
+    }
+    .naglowek h1{
+        font-size: 2.5rem;
+    }
+    .nag-sekcji-realizacje h3{
+        font-size: 2.5rem;
+    }
+    .nag-sekcji-about h3{
+        font-size: 2.5rem;
+    }
+    .nag-sekcji-realizacje span{
+        font-size: 1.2rem
+    }
+    .about-tekst{
+        font-size: 1.2rem;
+    }
+
+}
