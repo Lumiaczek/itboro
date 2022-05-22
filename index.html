@@ -128,7 +128,6 @@
               Jedno z moich pierwszych zleceń. Wykonane dla firmy Stalmaks, projekt autorski powstał w kooperacji z zleceniodawcą. Wykonane przy pomocy frameworka Bulma.
               Posiada formularz kontaktowy który automatycznie wysyła maile napisany w PHP. Strona w pełni responsywna.
             </div>
-            <button class="button is-link">Zobacz więcej</button>
           </div>
         </div>
       </div>
@@ -146,7 +145,6 @@
               Moje drugie zlecenie. Wykonane dla firmy Hydrobar po przez pośrednika, projekt stworzony przez Designera, kilka poprawek moich. Wykonane przy pomocy frameworka Bulma.
               Posiada formularz kontaktowy który  wysyła maile napisany w PHP. Strona w pełni responsywna.
             </div>
-            <button class="button is-link">Zobacz więcej</button>
           </div>
         </div>
       </div>
@@ -164,7 +162,6 @@
               Pierwszy mój poważniejszy projekt. Strona witryny internetowej. W pełni responsywna, wykonana przy pomocy frameworka Bootstrap. Projekt ten realizowałem w pierwszej klasie,
               posiada on formularze logowania, rejestracji oraz kontaktu. Projekt całkowicie autorski.
             </div>
-            <button class="button is-link">Zobacz więcej</button>
           </div>
         </div>
       </div>
@@ -180,21 +177,21 @@
   <div class="separator2 wgore"></div>
 
   <section id="uslugi" class="uslugi"> 
-      <div class="columns">
-        <div class="hardware column">
-          <h3>Naprawa i optymalizacja komputerów</h3>
-          <p>Oferuje naprawę, czyszczenie, montaż i modernizacje komputerów i laptopów</p>
-          <p>Dodatkowo oferuję optymalizacje, czyszczenie lub instalacje systemu Windows oraz Linux</p>
+        <div class="columns">
+          <div class="hardware column">
+            <h3>Naprawa i optymalizacja komputerów</h3>
+            <p>Oferuje naprawę, czyszczenie, montaż i modernizacje komputerów i laptopów</p>
+            <p>Dodatkowo oferuję optymalizacje, czyszczenie lub instalacje systemu Windows oraz Linux</p>
+            <button class="js-modal-trigger button is-danger" data-target="kontaktmodal">Skontaktuj się ze mną!</button>
+          </div>
+                <div class="website-sec column">
+          <h3>Tworzenie stron internetowych</h3>
+          <p>Oferuje projektowanie oraz pisanie od zera stron internetowych</p>
+          <p>Dodatkowo wyszukuje najbardziej opłacalnych hosting oraz domenę i konfiguruje go</p>
+          <p>Poza samym tworzeniem stron od podstaw oferuje również konfiguracje systemu CMS WordPress</p>
           <button class="js-modal-trigger button is-danger" data-target="kontaktmodal">Skontaktuj się ze mną!</button>
+                </div>
         </div>
-      <div class="website-sec column">
-        <h3>Tworzenie stron internetowych</h3>
-        <p>Oferuje projektowanie oraz pisanie od zera stron internetowych</p>
-        <p>Dodatkowo wyszukuje najbardziej opłacalnych hosting oraz domenę i konfiguruje go</p>
-        <p>Poza samym tworzeniem stron od podstaw oferuje również konfiguracje systemu CMS WordPress</p>
-        <button class="js-modal-trigger button is-danger" data-target="kontaktmodal">Skontaktuj się ze mną!</button>
-      </div>
-    </div>  
   </section>
 
   <div class="separator wdol"></div>
@@ -218,18 +215,38 @@
     <a class="js-modal-trigger" data-target="kontaktmodal">Skontaktuj się ze mną!</a>
     <span>[ Copyright © | Daniel Borowski | 2022 ] </span>
 
-    <div id="kontaktmodal" class="modal">
+    <div class="modal" id="kontaktmodal">
       <div class="modal-background"></div>
-    
       <div class="modal-content">
-        <div class="box">
-          <p>Modal JS example</p>
-          <!-- Your content -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-5by3">
+              <img src="img/kontakt.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="card-tytul">Kontakt</h3>
+            <div class="content">
+              <p class="kontakt-p">Jesteś zainteresowany usługą bądź chcesz dowiedzieć się więcej? Napisz do mnie maila:</p>
+              <ul>
+                <li>danielborowski05@gmail.com</li>
+              </ul>
+            </div>
+              <a href="https://www.facebook.com/daniel.borowski.1848816/" class="ikonacon">
+                <i class="fa-brands fa-facebook-square"></i>
+              </a>
+              <a href="https://github.com/Lumiaczek" class="ikonacon">
+                <i class="fa-brands fa-github-square"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/daniel-borowski-622466215/" class="ikonacon">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+          </div>
         </div>
       </div>
-    
       <button class="modal-close is-large" aria-label="close"></button>
-    </div>
+      </div>
+  
 
   </footer>
 

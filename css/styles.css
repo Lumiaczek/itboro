@@ -34,6 +34,7 @@ body{
     margin-right: 1rem;
     font-size: 2.8rem;
     color: var(--acc2);
+    text-align: center;
 }
 .navbar{
     padding-bottom: 0.8rem;
@@ -132,6 +133,7 @@ body{
     font-weight: 400;
     font-size: 1.5rem;
     margin-top: 1rem;
+    text-align: center;
 }
 .about-tekst strong{
     color: var(--acc1);
@@ -160,6 +162,7 @@ body{
     background-color: var(--sec);
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 .nag-sekcji-realizacje h3{
     color: var(--acc2);
@@ -205,11 +208,8 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    z-index: 99;
 }
-/* .hardware:hover{
-    opacity: 0;
-} */
+
 .website-sec{
     width: 100%;
     background-image: url("../img/strona.png");
@@ -250,10 +250,6 @@ body{
 .hardware button{
     margin-top: 1rem;
 }
-@keyframes gray-hardware {
-    0% {}
-    100% {background-image: url("../img/komputer2.png");}
-}
 
 /* ! ---- */
 
@@ -268,8 +264,17 @@ body{
     height: 100%;
     flex-direction: column;
 }
-.stopka p{
-    color: white;
+.kontakt-p{
+    color: black;
+    font-weight: 400;
+}
+.kontakt-p ul{
+    color: black;
+    font-weight: 700;
+    list-style: none;
+}
+.stopka{
+    /* color: white; */
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -300,5 +305,9 @@ body{
 }
 .wgore{
     margin-bottom: 0.75rem;
+}
+.ikonacon{
+    color: black;
+    font-size: 2rem;
 }
 /* ! ---- */
